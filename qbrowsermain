@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Main Page</title>
+  </head>
+  <style>
+    html {
+      background-color: #202020;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+    }
+  </style>
+  <center><h1>Welcome to the Main Page for QBrowser!</h1>
+  
+  Click the search  bar above and enter a website link, or enter in a search term and press enter.
+  This was created solely by <a href="https://scratch.mit.edu/users/qloak">@qloak</a>
+</html>

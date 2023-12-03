@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>qloak's website!!!!!!!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    html {
+      background-color: #202020;
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    .button {
+      background-color: #202020;
+      border-style: solid;
+      border-color: white;
+      border-radius: 50px;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    hr.new1 {
+      border-top: 1px solid red;
+    }
+  </style> For Asisi (these are some things I have made to bypass my schools annoying filters): <br>
+  <br>
+  <br>
+  <center>
+    <button class="button" onclick="rpv()">CCRP V Wiki</button>
+    <button class="button" onclick="rp70()">CCRP '70 Wiki</button>
+  </center>
+  <script>
+    function rpv() {
+      var url = "https://ccrpv.miraheze.org/wiki/Main_Page";
+      var urlObj = new window.URL(window.location.href);
+      win = window.open();
+      win.document.body.style.margin = "0";
+      win.document.body.style.height = "100vh";
+      var iframe = win.document.createElement("iframe");
+      iframe.style.border = "none";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.margin = "0";
+      iframe.referrerpolicy = "no-referrer";
+      iframe.allow = "fullscreen";
+      iframe.src = url.toString();
+      win.document.body.appendChild(iframe);
+    }
+
+    function rp70() {
+      var url = "https://cc70.miraheze.org/wiki/Main_Page";
+      var urlObj = new window.URL(window.location.href);
+      win = window.open();
+      win.document.body.style.margin = "0";
+      win.document.body.style.height = "100vh";
+      var iframe = win.document.createElement("iframe");
+      iframe.style.border = "none";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.margin = "0";
+      iframe.referrerpolicy = "no-referrer";
+      iframe.allow = "fullscreen";
+      iframe.src = url.toString();
+      win.document.body.appendChild(iframe);
+    }
+  </script>
+</html>

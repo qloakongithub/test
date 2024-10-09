@@ -9,12 +9,20 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: black;
+            color: white;
             padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
         }
         #gameContainer {
             display: none; /* Hide the game initially */
             margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: white;
         }
         .button {
             padding: 10px 20px;
@@ -23,24 +31,165 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin: 10px;
         }
         .button:hover {
             background-color: #0056b3;
+        }
+        .section {
+            margin-bottom: 40px;
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Learn to Code!</h1>
-    <p>Here you'll learn the basics of programming, web development, and more. Coding is a very difficult art that could take you months, or even years to master! But, don't fret! I'm here to help you with any code-related learning you need to endure!</p>
-    
-    <h2>Today's Lesson: Understanding Slopes</h2>
-    <p>Curious about how slopes work in mathematics? Click the button below to see an interactive example!</p>
-    
-    <button class="button" onclick="showGame()">How Do Slopes Work?</button>
+    <p>Your journey into programming begins here. Explore various topics to enhance your coding skills.</p>
 
-    <p>If you don't know what slopes are, I'll explain below! Slopes are a constant downward line used in functions. Have you ever been riding a bike down a road? Well, you were actually riding down a slope! Slopes are the fundamental of game programming, and are very important when it comes to it. Click below for the next page!</p>
+    <div class="section">
+        <h2>Introduction to Programming</h2>
+        <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. It involves writing code in various programming languages such as Python, JavaScript, and C++. Each language has its own syntax and rules.</p>
+        <p>For more information, check out these resources:</p>
+        <ul>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - Interactive coding lessons.</li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - A comprehensive coding bootcamp.</li>
+        </ul>
+        <button class="button" onclick="alert('This section is under development!')">Read More</button>
+    </div>
 
-    <button class="button">Next Page</button>
+    <div class="section">
+        <h2>Understanding Variables</h2>
+        <p>Variables are used to store data that can be referenced and manipulated in a program. They act as containers for information. In programming, you can create variables to hold different types of data, such as numbers, strings, and boolean values.</p>
+        <p>For more detailed explanations and examples, visit:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">W3Schools - JavaScript Variables</a></li>
+            <li><a href="https://www.learnpython.org/en/Variables_and_Types" target="_blank">LearnPython - Variables and Types</a></li>
+        </ul>
+        <button class="button" onclick="alert('This section is under development!')">Learn More</button>
+    </div>
+
+    <div class="section">
+        <h2>Conditional Statements</h2>
+        <p>Conditional statements allow you to perform different actions based on different conditions. They are crucial for decision-making in your code. Common conditional statements include 'if', 'else if', and 'else'. These statements help control the flow of your program based on certain criteria.</p>
+        <p>Explore more about conditional statements:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank">MDN - Control Flow</a></li>
+            <li><a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank">W3Schools - Python Conditions</a></li>
+        </ul>
+        <button class="button" onclick="alert('This section is under development!')">Explore Examples</button>
+    </div>
+
+    <div class="section">
+        <h2>Loops in Programming</h2>
+        <p>Loops are used to execute a block of code repeatedly. They are useful for tasks that require repetition, such as iterating over arrays or lists. The most common types of loops are 'for', 'while', and 'do while' loops.</p>
+        <p>To learn more about loops, check these resources:</p>
+        <ul>
+            <li><a href="https://www.codecademy.com/articles/loops" target="_blank">Codecademy - Loops</a></li>
+            <li><a href="https://www.learncpp.com/cpp-tutorial/for-loops/" target="_blank">LearnCPP - For Loops</a></li>
+        </ul>
+        <button class="button" onclick="alert('This section is under development!')">View Loop Examples</button>
+    </div>
+
+    <div class="section">
+        <h2>Understanding Slopes</h2>
+        <p>Curious about how slopes work in mathematics? Slopes are used to measure the steepness or angle of a line. The slope is calculated as the ratio of the rise (the change in y) to the run (the change in x). Understanding slopes is important in both mathematics and programming, especially in graphics and game development.</p>
+        <p>For more information on slopes, consider these resources:</p>
+        <ul>
+            <li><a href="https://www.khanacademy.org/math/linear-equations-and-inequalities/parallel-and-perpendicular-lines/intro-to-slope/v/introduction-to-slope" target="_blank">Khan Academy - Introduction to Slope</a></li>
+            <li><a href="https://www.mathsisfun.com/algebra/slope.html" target="_blank">Math Is Fun - Slope</a></li>
+        </ul>
+        <button class="button" onclick="showGame()">How Do Slopes Work?</button>
+    </div>
+
+    <div class="section">
+        <h2>Polygons</h2>
+        <p>Polygons are flat shapes with straight sides. They can have three sides (triangles), four sides (quadrilaterals), five sides (pentagons), and so on. Understanding polygons is essential in both geometry and computer graphics.</p>
+        <p>To learn more about polygons, visit:</p>
+        <ul>
+            <li><a href="https://www.mathsisfun.com/geometry/polygons.html" target="_blank">Math Is Fun - Polygons</a></li>
+            <li><a href="https://www.khanacademy.org/math/geometry-home/geometry-geometry/geometry-polygons/a/polygons-review" target="_blank">Khan Academy - Polygons</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>HTML (Hypertext Markup Language)</h2>
+        <p>HTML is the standard markup language for creating web pages. It describes the structure of a webpage using elements and tags. Learning HTML is essential for anyone looking to get into web development.</p>
+        <p>Resources to get started with HTML:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN - HTML Guide</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <p>CSS is used to style and layout web pages, including colors, fonts, and spacing. It allows you to separate content from presentation, making it easier to maintain and design websites.</p>
+        <p>To learn more about CSS, visit:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS Tutorial</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN - CSS Guide</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>JavaScript (JS)</h2>
+        <p>JavaScript is a high-level programming language that is essential for adding interactivity to web pages. It can be used for client-side scripting, server-side programming, and more.</p>
+        <p>Learn JavaScript with these resources:</p>
+        <ul>
+            <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy - JavaScript Course</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN - JavaScript Guide</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>C++</h2>
+        <p>C++ is a powerful general-purpose programming language. It is widely used for system/software development, game development, and in performance-critical applications.</p>
+        <p>Resources to learn C++:</p>
+        <ul>
+            <li><a href="https://www.learncpp.com/" target="_blank">LearnCPP - C++ Tutorial</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus" target="_blank">Codecademy - Learn C++</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Python</h2>
+        <p>Python is an interpreted, high-level programming language known for its readability and versatility. It's widely used in web development, data analysis, artificial intelligence, and more.</p>
+        <p>To get started with Python, check out:</p>
+        <ul>
+            <li><a href="https://www.learnpython.org/" target="_blank">LearnPython - Interactive Python Tutorial</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy - Learn Python 3</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Tuples</h2>
+        <p>Tuples are a data structure that can hold multiple items in a single variable. They are similar to lists but are immutable, meaning their contents cannot be changed after creation.</p>
+        <p>For more information on tuples:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">W3Schools - Tuples in Python</a></li>
+            <li><a href="https://www.learnpython.org/en/Tuples" target="_blank">LearnPython - Tuples</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Printing in Programming</h2>
+        <p>Printing is a fundamental function in programming that allows you to display output to the console or screen. It's essential for debugging and providing feedback to users.</p>
+        <p>Learn about printing in various languages:</p>
+        <ul>
+            <li><a href="https://www.w3schools.com/python/python_output.asp" target="_blank">W3Schools - Printing in Python</a></li>
+            <li><a href="https://www.codecademy.com/articles/what-is-console-log" target="_blank">Codecademy - Console.log in JavaScript</a></li>
+        </ul>
+    </div>
 
     <div id="gameContainer">
         <div class="webgl-content">
@@ -48,6 +197,10 @@
         </div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <script src="js/slope.js"></script>
+    </div>
+
+    <div class="section">
+        <button class="button" onclick="alert('This section is under development!')">Go to Part 1 of the Tutorial</button>
     </div>
 
     <script>

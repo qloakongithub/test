@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Slope Unblocked by bribes</title>
-      <link rel="stylesheet" href="css/game.css" type="text/css">
-      <meta name="referrer" content="no-referrer">
-   </head>
-   <body>
-      <div class="webgl-content">
-         <div id="gameContainer"></div>
-      </div>
-      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      <script src="js/slope.js"></script>
-   </body>
+<head>
+    <meta charset="utf-8">
+    <title>Learn to Code</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="referrer" content="no-referrer">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        #gameContainer {
+            display: none; /* Hide the game initially */
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Learn to Code!</h1>
+    <p>Here you'll learn the basics of programming, web development, and more.</p>
+    
+    <h2>Today's Lesson: Understanding Slopes</h2>
+    <p>Curious about how slopes work in mathematics? Click the button below to see an interactive example!</p>
+    
+    <button class="button" onclick="showGame()">How Do Slopes Work?</button>
+
+    <div id="gameContainer">
+        <div class="webgl-content">
+            <div id="slopeGame"></div>
+        </div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <script src="js/slope.js"></script>
+    </div>
+
+    <script>
+        function showGame() {
+            document.getElementById('gameContainer').style.display = 'block';
+            // Optionally initialize or start the game here if needed
+        }
+    </script>
+</body>
 </html>
